@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="myCalculator">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" name="" id="ShowResult"></td>
+            
+               
+            </tr>
+            <tr>
+                <td><input type="button" value="C" name="" onclick="clearAllInfo()" id="button1"></td>
+                <td><input type="button"  name="" value='('  onclick="calculating( '(' )" id="button2"></td>
+                <td><input type="button"  name="" value=")" onclick="calculating( ')' ) " id="button3"></td>
+                <td><input type="button"  name="" value="%"onclick="calculating('%')" id="button4"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" name=""onclick="calculating('7')" id="button5"></td>
+                <td><input type="button"  name="" value='8'onclick="calculating('8')" id="button6"></td>
+                <td><input type="button"  name="" value="9"onclick="calculating('9')" id="button7"></td>
+                <td><input type="button"  name="" value="*"onclick="calculating('*')" id="button8"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" name=""onclick="calculating('4')" id="button9"></td>
+                <td><input type="button"  name="" value='5'onclick="calculating('5')" id="button10"></td>
+                <td><input type="button"  name="" value="6"onclick="calculating('6')" id="button11"></td>
+                <td><input type="button"  name="" value="-"onclick="calculating('-')" id="button12"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" name=""onclick="calculating('1')" id="button13"></td>
+                <td><input type="button"  name="" value='2'onclick="calculating('2')" id="button14"></td>
+                <td><input type="button"  name="" value="3"onclick="calculating('3')" id="button15"></td>
+                <td><input type="button"  name="" value="+"onclick="calculating('+')" id="button16"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="00" name=""onclick="calculating('00')" id="button17"></td>
+                <td><input type="button"  name="" value='0'onclick="calculating('0')" id="button18"></td>
+                <td><input type="button"  name="" value="."onclick="calculating('.')" id="button19"></td>
+                <td><input type="button"  name="" value="=" onclick="finalAnswer()" id="button20"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
